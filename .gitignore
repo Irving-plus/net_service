@@ -1,0 +1,6 @@
+**/target/
+**.svn/
+**.classpath
+**.settings/
+**.project
+**.idea
