@@ -179,13 +179,13 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>	
 			</plugin>
 
-			<plugin>
+			<!--<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.4.13</version>
 
 				<executions>
-					<!-- 绑定 mvn: clean package -->
+					&lt;!&ndash; 绑定 mvn: clean package &ndash;&gt;
 					<execution>
 						<id>build-image</id>
 						<phase>package</phase>
@@ -193,8 +193,8 @@
 							<goal>build</goal>
 						</goals>
 					</execution>
-					<!-- 上传本地私库 -->
-					<!-- <execution> <id>image-tag</id> <phase>package</phase>
+					&lt;!&ndash; 上传本地私库 &ndash;&gt;
+					&lt;!&ndash; <execution> <id>image-tag</id> <phase>package</phase>
 						 <goals>
 
 							 <goal>tag</goal> &lt;!&ndash;tag命令，相当于docker的tag命令&ndash;&gt;
@@ -212,30 +212,30 @@
 							<configuration>
 								<imageName>114.55.92.111:5000/${image.name}</imageName>&lt;!&ndash;要push的镜像名&ndash;&gt;
 							</configuration>
-						</execution>-->
+						</execution>&ndash;&gt;
 				</executions>
 				<configuration>
 
-					<forceTags>true</forceTags><!--覆盖相同标签镜像 -->
-					<imageName>${image.name}</imageName>  <!--指定镜像名称 仓库/镜像名:标签 -->
-					<!-- <baseImage>openjdk-8-jdk-alpine</baseImage>指定基础镜像，相当于dockerFile中的FROM<image> -->
-					<dockerHost>http://114.55.92.111:2375</dockerHost>  <!-- 指定仓库地址 -->
-					<!-- <entryPoint>["java","-jar","/${project.build.finalName}.jar"]</entryPoint>
-						容器启动执行的命令，相当于dockerFile的ENTRYPOINT -->
-					<dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>   <!--dockerfile文件路径 -->
+					<forceTags>true</forceTags>&lt;!&ndash;覆盖相同标签镜像 &ndash;&gt;
+					<imageName>${image.name}</imageName>  &lt;!&ndash;指定镜像名称 仓库/镜像名:标签 &ndash;&gt;
+					&lt;!&ndash; <baseImage>openjdk-8-jdk-alpine</baseImage>指定基础镜像，相当于dockerFile中的FROM<image> &ndash;&gt;
+					<dockerHost>http://114.55.92.111:2375</dockerHost>  &lt;!&ndash; 指定仓库地址 &ndash;&gt;
+					&lt;!&ndash; <entryPoint>["java","-jar","/${project.build.finalName}.jar"]</entryPoint>
+						容器启动执行的命令，相当于dockerFile的ENTRYPOINT &ndash;&gt;
+					<dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>   &lt;!&ndash;dockerfile文件路径 &ndash;&gt;
 					<resources>
 						<resource>
-							<!-- 指定资源文件 -->
+							&lt;!&ndash; 指定资源文件 &ndash;&gt;
 							<targetPath>/</targetPath>
-							<!-- 指定要复制的目录路径，这里是当前目录 -->
-							<directory>${project.build.directory}</directory>  <!-- 指定要复制的根目录，这里是target目录 -->
-							<include>${project.build.finalName}.jar</include>  <!-- 指定需要拷贝的文件，这里指最后生成的jar包 -->
+							&lt;!&ndash; 指定要复制的目录路径，这里是当前目录 &ndash;&gt;
+							<directory>${project.build.directory}</directory>  &lt;!&ndash; 指定要复制的根目录，这里是target目录 &ndash;&gt;
+							<include>${project.build.finalName}.jar</include>  &lt;!&ndash; 指定需要拷贝的文件，这里指最后生成的jar包 &ndash;&gt;
 						</resource>
 					</resources>
 					<serverId>docker-hub</serverId>
 				</configuration>
 			</plugin>
-
+-->
 
 			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
