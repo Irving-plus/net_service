@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Build	
-      uses: qcastel/github-actions-maven/actions/maven@master
+    - name: Apache Maven Build Automation for Java Project
+      uses: NishkarshRaj/Maven_Actions@0.1
       with:
-        maven-args: "clean install"
+          # Apache Maven hierarchy to be followed in src/main/java/{pkg name} for source code
+        src: src/main/java/
