@@ -19,5 +19,9 @@ jobs:
     - name: maven-settings-xml-action
       uses: whelk-io/maven-settings-xml-action@v4
       with:  
-       servers: '[{ "id": "docker-aliyun", "username": "2902348036@qq.com", "password": "742042932mn" ,"configuration": {"email": "2902348036@qq.com"}}]'
-       run: mvn -B package --file pom.xml
+       servers: '[{ "id": "docker-aliyun", "username": "2902348036@qq.com", "password": "742042932mn" ,"configuration": {"email": "2902348036@qq.com"}}]'   
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+      
+    
+      
