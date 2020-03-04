@@ -13,7 +13,7 @@
 	<artifactId>net_service</artifactId>
 	<packaging>jar</packaging>
 	<description> parent project </description>
-
+	
 
 	<properties>
 		<docker.repostory>registry.cn-shanghai.aliyuncs.com</docker.repostory>
@@ -208,7 +208,11 @@
 							<include>${project.build.finalName}.jar</include>
 						</resource>
 					</resources>
-					<serverId>docker-aliyun</serverId>
+					<serverId>
+
+						docker-aliyun
+
+					</serverId>
 					<registryUrl>${docker.repostory}</registryUrl>
 					<pushImage>true</pushImage>
 				</configuration>

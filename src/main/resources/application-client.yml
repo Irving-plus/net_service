@@ -10,5 +10,5 @@ zhou:
 #springBoot2.0   root
 logging:
   level:
-    root: debug,info,error  
+    root: debug,info,error,
   
