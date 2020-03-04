@@ -183,7 +183,7 @@
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
-				<version>0.4.13</version>
+				<version>1.0.0</version>
 
 				<executions>
 					<execution>
@@ -208,11 +208,7 @@
 							<include>${project.build.finalName}.jar</include>
 						</resource>
 					</resources>
-					<serverId>
-
-						docker-aliyun
-
-					</serverId>
+					<serverId>docker-aliyun</serverId>
 					<registryUrl>${docker.repostory}</registryUrl>
 					<pushImage>true</pushImage>
 				</configuration>
