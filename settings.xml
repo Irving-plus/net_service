@@ -33,6 +33,7 @@
             </repositories>
             <!-- 注意：以下配置用于指定Maven插件的仓库，不能省略，否则可能出现无法加载Maven插件的问题 -->
         </profile>
+
     </profiles>
    
 </settings>
