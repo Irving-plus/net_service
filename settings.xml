@@ -5,13 +5,7 @@
     xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
     
     
-    <pluginGroups>
-        
-    </pluginGroups>
-    
-    <proxies>
-        
-    </proxies>
+  
     
     <servers>
         <server>
@@ -41,13 +35,7 @@
         <profile>
             <id>nexus</id>
             <repositories>
-                <repository>
-                    <id>aliyun-repo</id>
-                    <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-                    <releases><enabled>true</enabled></releases>
-                    <snapshots><enabled>true</enabled></snapshots>
-                </repository>
-                
+               
                 <repository>
                     <id>repo1</id>
                     <url>https://repo1.maven.org/maven2/</url>
@@ -56,26 +44,7 @@
                 </repository>
             </repositories>
             <!-- 注意：以下配置用于指定Maven插件的仓库，不能省略，否则可能出现无法加载Maven插件的问题 -->
-            <pluginRepositories>
-                
-                <pluginRepository>
-                    <id>aliyun-plugin</id>
-                    <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-                    <releases><enabled>true</enabled></releases>
-                    <snapshots><enabled>true</enabled></snapshots>
-                </pluginRepository>
-                <pluginRepository>
-                    <id>repo1-plugin</id>
-                    <url>https://repo1.maven.org/maven2/</url>
-                    <releases><enabled>true</enabled></releases>
-                    <snapshots><enabled>true</enabled></snapshots>
-                </pluginRepository>
-            </pluginRepositories>
-        </profile>
-        
+            
     </profiles>
-    
-    <activeProfiles>
-        <activeProfile>nexus</activeProfile>
-    </activeProfiles>
+   
 </settings>
